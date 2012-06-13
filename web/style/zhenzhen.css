@@ -1,0 +1,118 @@
+          body { font-family: Arial,Helvetica,sans-serif;background-color:#EDEDED;}
+	  .left {
+		  width:200px;
+		  height:100%;
+		  display:table-cell;
+		  margin:0;
+		  padding:0;
+		  background-color:#5599FF;
+		  -moz-border-radius:    5px; 
+   		  -webkit-border-radius: 5px; 
+   		  border-radius:         5px;
+	  }
+	  .right {
+		  width:200px;
+		  height:100%;
+		  display:table-cell;
+		  margin:0;
+		  padding:0;
+		  background-color:lightpink;
+	  	  -moz-border-radius:    5px; 
+   		  -webkit-border-radius: 5px; 
+   		  border-radius:         5px;
+	  }
+	  .name {
+		  text-align:center;
+		  color:red;
+		  margin-bottom:10px;
+	  }
+	  .image {
+		  text-align:center;
+		  margin-top:10px;
+	  }
+	  .center {
+		  width:200px;
+		  height:100%;
+		  display:table-cell;
+		  margin:0;
+		  padding:0;
+	  }
+	  .conversationDiv {
+		  text-align:center;
+		  height:100%;
+		  padding:2px;
+		  word-break:break-all;
+		  -moz-border-radius:    3px; 
+   		  -webkit-border-radius: 3px; 
+   		  border-radius:         3px;
+	  }
+	  #myConversation {
+		  background-color:#5599FF; 
+		  margin-left:15px;
+		  margin-right:2px;
+	  }
+	  #herConversation {
+		  background-color:lightpink; 
+		  margin-left:2px;
+		  margin-right:15px;
+	  }
+	  #timeDiv {
+		  width:800px;
+		  text-align:center;
+	  }
+	  #centerDiv {
+		  width:800px;
+		  text-align:center;
+		  margin-top:3px;
+	  }
+	 
+#talkbubble {
+   width: 120px; 
+   height: 80px; 
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px; 
+   -webkit-border-radius: 10px; 
+   border-radius:         10px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+#loading{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  	z-index:99990;
+	background:#000000;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	-moz-opacity:0.5;
+	-khtml-opacity:0.5;
+}
+#loading_img{
+	  	z-index:99999;
+	width:80px;
+	height:80px;
+	background:url(img/loading.png) 0 100% no-repeat;
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;	
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+
+	  

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <title>
+            QQ Conversation History Visual Tool
+        </title>
+        <meta charset="gbk">
+        <link type="text/css" rel="Stylesheet" href="style/conversation.css" />
+    </head>
+    
+    <body>
+        <div id="main">
+            <div id="timeDiv" class="visualDiv">
+                time
+            </div>
+            <div id="myDiv" class="visualDiv sideDiv">
+                <div id="myDivContent" class="sideDiv">
+                    <div class="image">
+                        <img src="img/my.jpg" width="100px" height="100px" />
+                    </div>
+                    <div class="myFont name">
+                        my qq name
+                    </div>
+                </div>
+            </div>
+            <div id="myConversation" class="visualDiv conversationDiv myFont">
+                ...
+            </div>
+            <div id="herDiv" class="visualDiv sideDiv">
+                <div id="herDivContent" class="sideDiv">
+                    <div class="image">
+                        <img src="img/her.jpg" width="100px" height="100px" />
+                    </div>
+                    <div class="herFont name">
+                        her qq name
+                    </div>
+                </div>
+            </div>
+            <div id="herConversation" class="visualDiv conversationDiv herFont">
+                ...
+            </div>
+            <div id="canvasDiv">
+                <canvas id="canvas">
+                </canvas>
+            </div>
+        </div>
+        <div id="loading" align="center" style="display:none">
+            <div id="loading_img" />
+        </div>
+        <script type="text/javascript" src="script/base.js">
+        </script>
+        <script type="text/javascript" src="script/config.js">
+        </script>
+        <script type="text/javascript" src="script/cssanimation.js">
+        </script>
+        <script type="text/javascript" src="script/conversation.js">
+        </script>
+    </body>
+
+</html>

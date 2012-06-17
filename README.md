@@ -12,3 +12,7 @@ QQ聊天记录可视化工具
 将生成的脚本拷贝到web/script/data目录下，此时即可从web下的index.html进行访问了。
 
 具体参考example的内容。
+
+## DEMO地址
+
+http://simplemx.github.com/QQ-Conversation-History-Visual-Tool/

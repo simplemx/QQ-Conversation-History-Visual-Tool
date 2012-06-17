@@ -76,6 +76,21 @@ a{
     -o-transition: opacity 2s ease-in-out;   
     transition: opacity 2s ease-in-out; 
 }
+#github{
+	height:40px;
+	position:fixed;
+	right:100px;
+	top:10px;
+	z-index:9999;
+	background-color:rgba(153, 153, 153, 0.8);
+	border-radius: 5px;
+	moz-border-radius: 5px;
+	webkit-border-radius: 5px;
+}
+#github img{
+	padding:5px;
+}
+
 #canvasDiv{
 	position: absolute;
 	width:100%;

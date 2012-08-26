@@ -19,6 +19,21 @@
 		];
 	var SUPPORTED_TRANSFORM = null;
 	
+	//due to the css animation is not caculate the actual location so store 
+	//the actual location in div's _x,_y
+	var setLocationX = function(div,x){
+		div && div._x = x;
+	};
+
+	var setLocationY = function(div,y){
+		div && div._y = y;
+	};
+
+	var resoreLocation = function(div){
+		setLocationX(div , div.offsetLeft);
+		setLocationY(div , div.offsetTop);
+	};
+
 	var isRotate = function(){
 		return Math.random() * 2 > 0.6;
 	};
@@ -48,6 +63,7 @@
 	var move2Right = function(div){
 		return function(){
 			setAnimation(div , "translate(" + (width - div.offsetWidth) + "px,0)");
+			setLocationX(div,(width - div.offsetWidth));
 		};
 	};
 
@@ -58,9 +74,11 @@
 			}
 			else if(div === herImgDiv){
 				setAnimation(div , "translate(0,-" + (div.offsetTop - myImgDiv.offsetTop) + "px)");
+				setLocationY(div , myImgDiv.offsetTop);
 			}
 			else{
 				setAnimation(div , "translate(0,-" + (div.offsetTop - myTextDiv.offsetTop) + "px)"); 
+				setLocationY(div , myTextDiv.offsetTop);
 			}
 		};
 	};

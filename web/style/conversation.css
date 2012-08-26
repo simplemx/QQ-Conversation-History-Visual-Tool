@@ -21,11 +21,6 @@ a{
 .herFont{
 	color: red;
 }
-.image
-{
-	padding-top: 10px;
-	text-align: center;
-}
 .conversationDiv
 {
 	padding:5px;
@@ -43,6 +38,7 @@ a{
     transition: all 1s ease-in-out; 
 }
 .sideDiv{
+	text-align : center;
 	border-radius: 5px;
 	moz-border-radius: 5px;
 	webkit-border-radius: 5px;
@@ -52,6 +48,12 @@ a{
     -moz-transition: all 1s ease-in-out;   
     -o-transition: all 1s ease-in-out;   
     transition: all 1s ease-in-out; 
+}
+.sideDiv img
+{
+	padding-top: 10px;
+	width : 100px;
+	height : 100px;
 }
 .welcomeMsg{
 	position:absolute; 

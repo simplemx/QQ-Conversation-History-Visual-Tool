@@ -50,8 +50,6 @@ a{
     transition: all 1s ease-in-out; 
 }
 .sideDiv img{
-	width:100px;
-	height:100px;
 	padding-top: 10px;
 }
 .welcomeMsg{
